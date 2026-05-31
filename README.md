@@ -1,6 +1,4 @@
-# CTS-DN5.0-Upskilling
-
-# CTS Digital Nurture 5.0 – Upskilling Repository
+# CTS Digital Nurture 5.0 – Upskilling
 
 ## Overview
 
@@ -10,7 +8,7 @@ This repository contains my learning journey and hands-on practice completed as 
 
 ## Learning Approach
 
-Instead of directly copying solutions, I followed a concept-first approach:
+ I followed a concept-first approach and practice:
 
 * Understood the fundamentals behind each topic.
 * Practiced every exercise independently.
