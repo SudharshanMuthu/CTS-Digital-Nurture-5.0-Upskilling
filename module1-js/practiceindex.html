@@ -1,1 +1,168 @@
+<!DOCTYPE html><!--ithu html document nu solum website ku render pana -->
+<html lang="en"><!--html englishla irukunu solum-->
+<head>
+    <!--head section---><!--comment line prg understand pana eluthi vachukueathu ook-->
+    <meta charset="UTF-8"><!--spacial character use pana like rupee doloor-->
+    <title>upskil module 1 html </title><!--display on the use tab-->
+<!--css internel class-->
+<!--# id ku use panurom-->
+ <!-- . class ku use panurom-->
+<style>
+
+ #welcomebanner{ 
+    background-color: blue;
+ }   
+
+.highlight{
+    background-color: rgb(255, 0, 0);
+    font-size: 12px;
+}
+.imageboarder{
+    border: 2px solid black;
+}
+</style>
+</head>
+<body>
+    <!--main section ithan ithulatha nambo webpage content write pana porom-->
+    <!--navigation--><br><br>
+    <nav><!--nav bar yethuku use agum na touch pana antha page ku kutitu poidum or same page la id use pani iruntha antha section ku kuda pogalam-->
+    <a href="#home">home  | </a><!--anchor tag yethuku use pani iruken na link ku vaika-->
+    <a href="#event">event | </a>
+    <a href="#contact">contact </a>
+   </nav>
+<!--main-->
+<h1>this is html 1step file</h1><br><!--h1,h2,to h5 tag use pani size vari pani website la display panalam-->
+<!-- section sectiona pierika section use panurom-->
+<section id="home">this is home section </section><!--id yethuku use panurom na uniq iruka oru page la onec use panalam athe class na multiple tyme use panalam-->
+<section id="event">this is event section </section><!-- id kum class kum difference therinjukanum ok css la id ku # use panuvom and class ku . use pani css write panuvom ok -->
+<section id="contact">this is contact section </section>
+
+<div id="welcomebanner"> welcome section using idwith internel css </div>
+<span class ="welcomebanner" style="background-color: red;" >welcome section using class </span><!--inline style use pani irukom-->
+<p class="highlight" >highlight 1</p><!--sAME class use pai yelathukumsame uniform mari ore color kuduka porom  -->
+<p class="highlight" >highlight 2</p>
+<p class="highlight" >highlight 3</p>
+
+<h2>table with 2row 3column</h2>
+<table><!-- table create pana use panurom-->
+    <caption>this is comunity latest events</caption><!-- jjust caption tag nad it used in first for better undestanding-->
+    <tr><!--table row oda tag-->
+        <td><img src="image1.jpg" alt="first image" title="image 1 event" class ="imageboarder"></td><!-- image tag image vara vaika use panurom td tag table data -->
+        <td><img src="image2.jpg" alt="second image" title="image 2 event" class ="imageboarder"></td><!-- src image file vaika alt tag image varalana dispaly panna -->
+        <td><img src="image5.jpg" alt="five image" title="image 5 event" class ="imageboarder"></td> 
+    </tr>
+    <tr>
+        <td><img src="image3.jpg" alt="third image" title="image 3 event" class ="imageboarder"></td><!-- title yethuku use panurom na image mela mouse vacha titkle dsiplay avum for better understanding-->
+        <td><img src="image4.jpg" alt="forth image" title="image 4 event" class ="imageboarder"></td><!--class yethuku oru oru image tag la use panurom na avanga image kutha seperate border poda soluranga so athunala apdi podurom okva -->
+        <td><img src="image6.jpg" alt="six image" title="image 6 event" class ="imageboarder"></td>
+    </tr>
+</table>
+
+
+<!--registerform-->
+<br>
+<h2>registration form</h2>
+<form action="#"> <!--form tag yethuku use panuromna form create panathan da -->
+    NAME: <input type="text" placeholder="enter name" autofocus required><br> <!-- text kuduka-->
+    EMAIL: <input type="email" placeholder="enter email" required><br><!--email poda-->
+    DATE: <input type="date" placeholder="enter date" required><br><!--date type panna-->
+    EVENT TYPE: <select required><!--select panada option vachu-->
+        <option value="event1">event1</option>
+        <option value="event2">event2</option>
+        <option value="event3">event3</option>
+    </select><br>
+    <p id="feeDisplay"><!-- fee show agum click pana pana js use paanala so suma placehold pani vachu iruken-->
+</p><br>
+    MESSAGE: <textarea placeholder="enter message" required></textarea><br><!--textareanu oru tag da text type pana like short sentence-->
+    <button type="submit">Submit</button><!--submit button--><br>
+    <output >register succesfully</output><br>
+</form>
+
+<br>
+<h2>EVENT FEED BACK</h2>
+PHONE NO: <input type="text" placeholder ="enter 10digit no" required onblur="checkphoneno()"><br><!--onblur use pani iruken yethuku jna no type panitu vera yengayachum kai vacha or touch pana 10digit number filed la iruka vcheck panum its ooposite to onfocus-->
+EVENT FEE: <select onchange="fee()"><!--onchange use pani irukom yethuku oru itha mathi touch paana fee marum athan-->
+    <option>music</option>
+    <option>dance</option>
+    <option>instrumental</option>
+</select><br>
+
+
+<img src="imagezoom.jpg" alt="image not found" ondblclick="zoomout()"><br><!--double click panna js function call agum athula iruka velaiya pakum -->
+
+<textarea placeholder="enter feed back msg" onkeyup="count()"></textarea><br><!--textare filed la character count pana prom using onkeyup or onkeypress-->
+<button onclick="showmsg()">submit</button><br><!--submitbutton already know -->
+
+<br>
+<h3>video section</h3>
+<br>
+<video controls oncanplay="vplay()">
+    <source src="vd.mp4" >
+</video>
+<p id="videoStatus"></p><!--video play agalama vd ready agiruchu msg show pananumwen oncanplay run js ana ipothiku place hold pani vachu iruken-->
+<br>
+
+<h3>dropdown for local and session storage ex</h3>
+SELECT EVENT<select id="eventselect">
+    
+    <option>dance</option>
+    <option>music</option>
+    <option>instrumental</option>
+</select><br>
+<button onclick="saveitem()">save</button><br>
+<button onclick="clearitem()">clear</button>
+<br><br>
+<h3>find nearby event location</h3>
+<button onclick="showloco()">show location</button>
+<br>
+<p id="location"></p><!--js vachathum location show pana place hold pani vachu iruken-->
+<!--Footer-->
+<footer><!--footer display pana use panurom-->
+
+</footer>
+<!--why i use this script in this position-->
+<!--i write js inside head tag means it will first run then html run it may throw error da so i prefer this position for bigenner level on industry purpose i prefer js as externel file -->
+<script>
+function checkphoneno() { 
+
+
+}
+function fee() {
+    
+
+}
+function showmsg() { 
+
+
+}
+function zoomout() {
+
+
+}
+function count() {
+
+
+}
+function play(){
+
+}
+window.onbeforeunload=function (){
+
+}
+function saveitem() {
+localStorage.setItem("eventselect","music");
+sessionStorage.setItem("eventselect","music");
+}
+function clearitem() {
+localStorage.clear();
+sessionStorage.clear();
+}
+function showloco() {
+
+}
+</script>
+<!--js funtioncrate pani vachu iruken ithu structe than jsconceptvarapo ithula add panikalam yana functio nu soliten kalyanama kathukuthanu but ula yana vela nadakanum solala -->
+<script src="script.js"></script>
+</body>
+</html>
 
