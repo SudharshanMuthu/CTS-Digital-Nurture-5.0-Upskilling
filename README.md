@@ -1,4 +1,4 @@
-# CTS Digital Nurture 5.0 – Upskilling Program
+# CTS Digital Nurture 5.0 – Upskilling
 
 <p align="center">
   <b>Learning • Building • Practicing • Growing</b>
@@ -15,7 +15,7 @@
 
 ## About the Repository
 
-This repository documents my learning journey and hands-on implementations completed as part of the **Cognizant Digital Nurture 5.0 Upskilling Program**.
+This repository documents my learning journey and hands-on implementations completed as part of the **Cognizant Digital Nurture 5.0 Upskilling**.
 
 The repository contains module-wise exercises, practice programs, mini-projects, and learning artifacts developed while exploring modern web technologies, database systems, and Java programming concepts.
 
@@ -284,6 +284,6 @@ LinkedIn: https://www.linkedin.com/in/sudharshanmuthukrishnan24
 
 ---
 
-## Quote
+
 
 *"Continuous learning, consistent practice, and hands-on implementation are the key pillars of becoming a better software engineer."*
