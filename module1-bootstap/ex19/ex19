@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 19.1 & 19.2</title>
+
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+
+<div class="container mt-5">
+
+    <h1 class="text-primary text-center mb-4">
+        Bootstrap Sass Customization
+    </h1>
+
+    <div class="card p-4 shadow">
+
+        <h3>Customized Bootstrap</h3>
+
+        <p>
+            Primary color and border radius have been modified using Sass variables.
+        </p>
+
+        <button class="btn btn-primary">
+            Custom Primary Button
+        </button>
+
+    </div>
+
+</div>
+
+</body>
+</html>
